@@ -2,7 +2,7 @@ import 'package:get/get.dart';
 import 'package:getxproject/models/api_response.dart';
 import 'package:getxproject/services/httpservices.dart';
 
-class AssistDialogController extends GetxController {
+class AssetsDialogController extends GetxController {
   RxBool loading = false.obs;
   RxList<String> assets = <String>[].obs;
   RxString selectedAsset = "BitCoins".obs;

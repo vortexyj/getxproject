@@ -5,6 +5,6 @@ abstract class AppRouter {
   static const kHomeView = '/home';
 
   static final routes = [
-    GetPage(name: kHomeView, page: () => const HomePage()),
+    GetPage(name: kHomeView, page: () => HomePage()),
   ];
 }

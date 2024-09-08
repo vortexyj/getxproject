@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getxproject/controller/assetscontroller.dart';
 import 'package:getxproject/controller/assistdialogcontroller.dart';
 
 class ButtomSheet extends StatelessWidget {
   ButtomSheet({super.key});
   final controller = Get.put(
-    AssistDialogController(),
+    AssetsDialogController(),
   );
   // final AssistDialogController controller = Get.find(); // Use Get.find instead
 
@@ -59,6 +60,10 @@ class ButtomSheet extends StatelessWidget {
             ),
             MaterialButton(
               onPressed: () {
+                AssetsController assetsController = Get.find();
+                assetsController.addTrackedAssets(
+                    controller.selectedAsset.value,
+                    controller.assetsValue.value);
                 Get.back();
               },
               color: Colors.black,

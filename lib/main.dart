@@ -5,7 +5,7 @@ import 'package:getxproject/utils/routes.dart';
 
 void main() async {
   await registersevices();
-  await registerControllers();
+  await assetsController();
   runApp(const MyApp());
 }
 
